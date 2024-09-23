@@ -13,7 +13,7 @@
         <!-- FirstName -->
         <label for="firstname">First Name</label>
         <br>
-        <input type="text" id="firstname" required>
+        <input type="text" id="firstname" placeholder="Username" required>
 
         <br>
         <!-- Lastname -->
@@ -41,15 +41,21 @@
         <input type="text" id="country" required>
         <br>
 
-        <!-- Gender -->
-        <label for="gender">Gender</label>
-        <br>
-        <label for="male"></label>
-        <input type="radio" id="male" name="gender" required>
-        <label for="female">Male</label>
-        <input type="radio" id="female" name="gender" required>
-        <label for="female">Female</label>
-        <br>
+        <Fieldset>
+            <legend>Gender Details</legend>
+            <!-- Gender  Radio buttons-->
+            <label for="gender">Gender</label>
+            <br>
+            <label for="male"></label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br>
+        </Fieldset>
+
+        <input type="checkbox" id="updates" value="Recevie">
+        <label for="updates">Recevie Email Updates</label>
 
         <!-- Submit button -->
         <input type="submit" value="Register Now">
